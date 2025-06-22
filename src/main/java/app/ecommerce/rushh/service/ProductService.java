@@ -24,23 +24,27 @@ public interface ProductService {
     List<ProductDTO> getProductsWithDiscount(); // discountPrice < price
 
     List<ProductDTO> getTopRatedProducts(double minRating);
-
-    List<ProductDTO> searchProducts(String keyword);
-
-//    List<ProductDTO> getProductsByFilters(String idealFor, String color, String size); 
+    
+    List<ProductDTO> searchProductsByRatingAsc(String keyword);
+	
+    List<ProductDTO> searchProductsByRatingDesc(String keyword);
+	
+    List<ProductDTO> searchProductsByPriceAsc(String keyword);
+	
+    List<ProductDTO> searchProductsByPriceDesc(String keyword);
+    
+    Page<ProductDTO> searchProducts(String keyword, Pageable pageable);
     
     List<ProductDTO> filterProducts(String category, String brand, String idealFor, String color, String size, Double minPrice, Double maxPrice);  // multi-filter
     
     ProductDTO updateProduct(Long id, ProductDTO dto);
     
     Page<ProductDTO> getAllProducts(Pageable pageable);
-    Page<ProductDTO> searchProducts(String keyword, Pageable pageable);
     
     ProductDTO toggleProductAvailability(Long id, boolean enabled);
 
     List<ProductDTO> saveAllProducts(List<ProductDTO> products);
-
-    
+	
     void deleteProduct(Long id);
     
 }
