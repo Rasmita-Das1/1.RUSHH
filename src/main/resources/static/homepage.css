@@ -2,14 +2,16 @@ body {
   font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e6f7f0; /* #fbf7e6; #f9f6f1; #f8f8f8; Light grey background */
+  background-color: #e6f7f0; 
   /* Add padding to the body to prevent content from being hidden under the fixed header */
   padding-top: 5rem; /* Equivalent to Tailwind's pt-20 (80px) */
 }
+
 /* Hide scrollbar for product showcase and horizontal buttons but keep functionality */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
