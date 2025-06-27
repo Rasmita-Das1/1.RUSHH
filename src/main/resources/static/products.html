@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RUSHÉ | Products</title>
+  <link rel="stylesheet" href="css/products.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to RUSHÉ</h1>
+    <div class="user-info">
+      Logged in as: <span id="userName"></span>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <section class="filters">
+    <input type="text" id="search" placeholder="Search products..." />
+    <button onclick="fetchProducts()">Search</button>
+  </section>
+
+  <section id="productsContainer" class="product-grid"></section>
+
+  <script src="js/products.js"></script>
+</body>
+</html>

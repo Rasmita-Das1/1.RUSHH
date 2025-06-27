@@ -1,0 +1,32 @@
+body {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e6f7f0; 
+  /* Add padding to the body to prevent content from being hidden under the fixed header */
+  padding-top: 5rem; /* Equivalent to Tailwind's pt-20 (80px) */
+}
+
+/* Hide scrollbar for product showcase and horizontal buttons but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* used opacity and pointer-events for a smooth fade-in effect */
+.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; /* Prevents interaction when hidden */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.group:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto; /* Allows interaction when visible */
+}
