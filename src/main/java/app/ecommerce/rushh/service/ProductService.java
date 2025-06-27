@@ -25,13 +25,12 @@ public interface ProductService {
 
     List<ProductDTO> getTopRatedProducts(double minRating);
     
-//    List<ProductDTO> searchProductsByRatingAsc(String keyword);
-//
-//    List<ProductDTO> searchProductsByRatingDesc(String keyword);
-    
     List<ProductDTO> searchProductsByRatingAsc(String keyword);
+	
     List<ProductDTO> searchProductsByRatingDesc(String keyword);
+	
     List<ProductDTO> searchProductsByPriceAsc(String keyword);
+	
     List<ProductDTO> searchProductsByPriceDesc(String keyword);
     
     List<ProductDTO> searchProducts(String keyword);
@@ -49,7 +48,6 @@ public interface ProductService {
     ProductDTO toggleProductAvailability(Long id, boolean enabled);
 
     List<ProductDTO> saveAllProducts(List<ProductDTO> products);
-
     
     void deleteProduct(Long id);
     
