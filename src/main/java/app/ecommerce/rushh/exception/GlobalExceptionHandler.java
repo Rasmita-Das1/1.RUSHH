@@ -16,7 +16,7 @@ public class GlobalExceptionHandler {
 
     private ApiError buildError(HttpStatus status, String message, String errorCode, String path) {
         String traceId = UUID.randomUUID().toString();
-        log.error("[{}] {}: {}", traceId, errorCode, message); // 🔥 Structured Logging
+        log.error("[{}] {}: {}", traceId, errorCode, message); 
         return new ApiError(
                 status.value(),
                 status.getReasonPhrase(),
