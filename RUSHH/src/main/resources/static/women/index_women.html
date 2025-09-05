@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RUSHÉ | Women's Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f9f6f1;
+      }
+    </style>
+  </head>
+  <body class="text-gray-800">
+    <!-- Header -->
+    <header
+      class="bg-white shadow-sm py-4 px-6 flex justify-between items-center"
+    >
+      <a href="index.html" class="flex items-center space-x-2">
+        <img
+          src="rushé-logo.png"
+          alt="RUSHÉ Logo"
+          class="h-10 w-auto object-contain"
+        />
+      </a>
+      <nav class="space-x-6 font-medium hidden md:block">
+        <a href="index.html" class="hover:text-pink-600">Home</a>
+        <a href="#" class="text-pink-600 font-semibold">Women</a>
+        <a href="#" class="hover:text-pink-600">Men</a>
+        <a href="#" class="hover:text-pink-600">Beauty</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative w-full h-64 md:h-96 overflow-hidden mb-10">
+      <img
+        src="https://images.unsplash.com/photo-1514996937319-344454492b37"
+        alt="Women's Fashion"
+        class="w-full h-full object-cover"
+      />
+      <div
+        class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-white text-center"
+      >
+        <h1 class="text-3xl md:text-5xl font-bold mb-3">Women's Collection</h1>
+        <p class="text-lg md:text-xl">Unleash Your Style</p>
+      </div>
+    </section>
+
+    <!-- Product Grid -->
+    <main class="px-6 md:px-16 mb-16">
+      <h2 class="text-2xl font-semibold mb-6">Explore Categories</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <div class="bg-white rounded-lg shadow hover:shadow-lg overflow-hidden">
+          <img
+            src="https://source.unsplash.com/400x500/?fashion,dress"
+            alt="Dresses"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3 class="text-lg font-semibold">Dresses</h3>
+            <p class="text-sm text-gray-500">Up to 60% Off</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow hover:shadow-lg overflow-hidden">
+          <img
+            src="https://source.unsplash.com/400x500/?fashion,top"
+            alt="Tops"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3 class="text-lg font-semibold">Tops</h3>
+            <p class="text-sm text-gray-500">Flat ₹299</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow hover:shadow-lg overflow-hidden">
+          <img
+            src="https://source.unsplash.com/400x500/?fashion,skirt"
+            alt="Skirts"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3 class="text-lg font-semibold">Skirts</h3>
+            <p class="text-sm text-gray-500">Buy 1 Get 1</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow hover:shadow-lg overflow-hidden">
+          <img
+            src="https://source.unsplash.com/400x500/?fashion,jumpsuit"
+            alt="Jumpsuits"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3 class="text-lg font-semibold">Jumpsuits</h3>
+            <p class="text-sm text-gray-500">New Arrivals</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+      <p>&copy; 2025 RUSHÉ. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

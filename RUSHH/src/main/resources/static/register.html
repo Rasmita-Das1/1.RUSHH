@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  
+  <title>Register - RUSHÉ</title>
+  
+  <link rel="stylesheet" href="css/register.css" />
+  
+</head>
+<body>
+
+  <div class="register-container">
+  
+    <h2>Create Your RUSHÉ Account</h2>
+    
+    <form id="registerForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      
+      <!-- 
+      <select id="role" required>
+        <option value="">Select Role</option>
+        <option value="CUSTOMER">Customer</option>
+        <option value="ADMIN">Admin</option>
+      </select>
+       -->      
+      
+      <button type="submit">Register</button>
+      
+      <p id="registerError" class="error-text"></p>
+      
+    </form>
+    
+    <p><a href="login.html">Already have an account? Login</a></p>
+  </div>
+
+  <script src="js/register.js"></script>
+  
+</body>
+</html>
