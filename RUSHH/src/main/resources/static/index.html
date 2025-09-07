@@ -1,73 +1,817 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome to RUSHÉ</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f8f9fa;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RUSHÉ - Style. Defined.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="homepage.css" />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-white shadow-sm py-4 px-4 md:px-8 lg:px-16 flex items-center justify-between flex-wrap backdrop-blur-md bg-opacity-80"
+    >
+      <div class="flex-shrink-0">
+        <a href="#" class="text-2xl font-bold text-gray-800">RUSHÉ</a>
+      </div>
 
-    .hero {
-      background: linear-gradient(to right, #111, #444);
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
+      <nav
+        class="hidden md:flex flex-grow justify-center space-x-6 lg:space-x-10 text-lg font-medium"
+      >
+        <div class="relative group">
+          <a
+            href="#"
+            class="text-gray-700 hover:text-pink-600 transition-colors duration-200 py-2"
+            >WOMEN</a
+          >
+          <div
+            class="dropdown-menu absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-lg shadow-xl py-2 z-10 border border-gray-100"
+          >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Western Wear</a
+            >
+            <!-- <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Indian & Fusion Wear</a
+            > -->
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Sports & Active Wear</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Lingerie & Sleep Wear</a
+            >
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      letter-spacing: 2px;
-    }
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Footwear</a
+            >
 
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Jewellery</a
+            >
 
-    .hero .buttons a {
-      margin: 0 10px;
-      padding: 12px 25px;
-      background-color: #f72585;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      transition: background 0.3s;
-    }
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Accessories</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Bags</a
+            >
+          </div>
+        </div>
 
-    .hero .buttons a:hover {
-      background-color: #c9184a;
-    }
+        <div class="relative group">
+          <a
+            href="#"
+            class="text-gray-700 hover:text-pink-600 transition-colors duration-200 py-2"
+            >MEN</a
+          >
+          <div
+            class="dropdown-menu absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-lg shadow-xl py-2 z-10 border border-gray-100"
+          >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >T-Shirts & Polos</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Shirts</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Jeans & Pants</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Outerwear</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Activewear</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Footwear</a
+            >
+          </div>
+        </div>
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #222;
-      color: #ccc;
-    }
-  </style>
-</head>
-<body>
+        <!-- <div class="relative group">
+          <a
+            href="#"
+            class="text-gray-700 hover:text-pink-600 transition-colors duration-200 py-2"
+            >KIDS</a
+          >
+          <div
+            class="dropdown-menu absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-lg shadow-xl py-2 z-10 border border-gray-100"
+          >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >T-Shirts & Polos</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Shirts</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Jeans & Pants</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Outerwear</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Activewear</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Footwear</a
+            >
+          </div>
+        </div> -->
 
-  <div class="hero">
-    <h1>Welcome to RUSHÉ</h1>
-    <p>Fashion. Elegance. You.</p>
-    <div class="buttons">
-      <a href="login.html">Login</a>
-      <a href="register.html">Register</a>
-      <a href="products.html">Browse Products</a>
-    </div>
-  </div>
+        <div class="relative group">
+          <a
+            href="#"
+            class="text-gray-700 hover:text-pink-600 transition-colors duration-200 py-2"
+            >BEAUTY</a
+          >
+          <div
+            class="dropdown-menu absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-lg shadow-xl py-2 z-10 border border-gray-100"
+          >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Skincare, Bath & Body</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Makeup</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Haircare</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Fragrances</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Men's Grooming</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Appliances</a
+            >
+          </div>
+        </div>
 
-  <footer>
-    &copy; 2025 RUSHÉ — All Rights Reserved.
-  </footer>
+        <!-- <div class="relative group">
+          <a
+            href="#"
+            class="text-gray-700 hover:text-pink-600 transition-colors duration-200 py-2"
+            >HOME</a
+          >
+          <div
+            class="dropdown-menu absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-lg shadow-xl py-2 z-10 border border-gray-100"
+          >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >T-Shirts & Polos</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Shirts</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Jeans & Pants</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Outerwear</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Activewear</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md"
+              >Footwear</a
+            >
+          </div>
+        </div> -->
+      </nav>
 
-</body>
+      <div class="flex items-center space-x-7 ml-auto md:ml-0">
+        <div class="relative hidden sm:block">
+          <input
+            type="text"
+            placeholder="Own the Rush. Wear the Edge."
+            class="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-400 w-64 lg:w-96"
+          />
+          <svg
+            class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            ></path>
+          </svg>
+        </div>
+        <a
+          href="#"
+          class="text-gray-600 hover:text-pink-600 transition-colors duration-200 hidden sm:block"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="#"
+          class="text-gray-600 hover:text-pink-600 transition-colors duration-200"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="#"
+          class="text-gray-600 hover:text-pink-600 transition-colors duration-200"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+            ></path>
+          </svg>
+        </a>
+        <button class="md:hidden text-gray-600 hover:text-pink-600">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-6">
+      <section
+        class="relative w-full rounded-lg overflow-hidden shadow-lg mb-8"
+      >
+        <img
+          src="https://placehold.co/1200x400/FFD1DC/FF0066?text=RUSHÉ+Summer+Collection"
+          alt="RUSHÉ Summer Collection"
+          class="w-full h-auto object-cover"
+        />
+        <!-- <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-center p-4"
+        >
+          <h2
+            class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg mb-2"
+          >
+            DRENCHED
+          </h2>
+          <p class="text-xl md:text-3xl text-white drop-shadow-md mb-6">
+            DRAPE YOURSELF IN SUMMER COLORS
+          </p>
+          <a
+            href="#"
+            class="bg-white text-pink-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-pink-100 transition-all duration-300 transform hover:scale-105"
+            >SHOP NOW</a
+          >
+          <span
+            class="absolute bottom-4 right-4 bg-white text-pink-600 text-2xl md:text-3xl font-bold px-4 py-2 rounded-lg shadow-md"
+            >₹399</span
+          >
+        </div> -->
+      </section>
+
+      <section class="mb-8">
+        <div
+          class="flex space-x-4 overflow-x-auto pb-4 no-scrollbar justify-center md:justify-start"
+        >
+          <a
+            href="#"
+            class="flex-shrink-0 bg-gray-200 text-gray-800 font-medium py-2 px-6 rounded-full flex items-center space-x-2 hover:bg-gray-300 transition-colors duration-200 shadow-sm"
+          >
+            <span>Jumpsuits</span>
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="flex-shrink-0 bg-gray-200 text-gray-800 font-medium py-2 px-6 rounded-full flex items-center space-x-2 hover:bg-gray-300 transition-colors duration-200 shadow-sm"
+          >
+            <span>Oversized Tees</span>
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="flex-shrink-0 bg-gray-200 text-gray-800 font-medium py-2 px-6 rounded-full flex items-center space-x-2 hover:bg-gray-300 transition-colors duration-200 shadow-sm"
+          >
+            <span>Denim Tops</span>
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="flex-shrink-0 bg-gray-200 text-gray-800 font-medium py-2 px-6 rounded-full flex items-center space-x-2 hover:bg-gray-300 transition-colors duration-200 shadow-sm"
+          >
+            <span>Tracksuits</span>
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="flex-shrink-0 bg-gray-200 text-gray-800 font-medium py-2 px-6 rounded-full flex items-center space-x-2 hover:bg-gray-300 transition-colors duration-200 shadow-sm"
+          >
+            <span>Resort Shirts</span>
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="flex-shrink-0 bg-gray-200 text-gray-800 font-medium py-2 px-6 rounded-full flex items-center space-x-2 hover:bg-gray-300 transition-colors duration-200 shadow-sm"
+          >
+            <span>Dresses</span>
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="flex-shrink-0 bg-gray-200 text-gray-800 font-medium py-2 px-6 rounded-full flex items-center space-x-2 hover:bg-gray-300 transition-colors duration-200 shadow-sm"
+          >
+            <span>Skirts</span>
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <div
+          class="bg-white p-6 rounded-lg shadow-md flex items-center space-x-4"
+        >
+          <img
+            src="https://placehold.co/60x60/A0D8B3/FFFFFF?text=🚚"
+            alt="Free Shipping Icon"
+            class="w-12 h-12 rounded-full"
+          />
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800">Free Shipping</h3>
+            <p class="text-gray-600">On all orders</p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-lg shadow-md flex items-center space-x-4"
+        >
+          <img
+            src="https://placehold.co/60x60/FFADAD/FFFFFF?text=↩️"
+            alt="Easy Returns Icon"
+            class="w-12 h-12 rounded-full"
+          />
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800">Easy Returns</h3>
+            <p class="text-gray-600">No questions asked</p>
+          </div>
+        </div>
+
+        <div
+          class="bg-gradient-to-r from-purple-500 to-pink-500 p-6 rounded-lg shadow-md md:col-span-1 flex flex-col sm:flex-row items-center justify-between text-white text-center sm:text-left"
+        >
+          <div class="mb-4 sm:mb-0">
+            <h3 class="text-xl font-bold">
+              Flat ₹100 Off on Your 1st Purchase
+            </h3>
+            <p class="text-sm">Minimum Spend ₹499 | Free Delivery</p>
+          </div>
+          <div class="flex items-center space-x-3">
+            <div>
+              <p
+                class="bg-white text-purple-800 font-extrabold text-sm px-3 py-1 rounded-full shadow-inner"
+              >
+                Use Code: RUSHÉ-NEW
+              </p>
+              <!-- <p class="text-sm">Use Code :</p>
+              <span
+                class="bg-white text-purple-600 font-extrabold text-sm px-3 py-1 rounded-md shadow-inner"
+                >RUSHÉ-NEW</span
+              > -->
+            </div>
+            <a
+              href="#"
+              class="bg-white text-pink-600 font-bold py-2 px-2 rounded-full shadow-lg hover:bg-pink-100 transition-all duration-300"
+              >Shop Now</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Shop by Category</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105"
+          >
+            <a href="#">
+              <img
+                src="https://placehold.co/200x260/FFD1DC/FF0066?text=Kids+Wear"
+                alt="Kids Wear"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-3 text-center">
+                <p class="text-gray-800 font-medium">Kids Wear</p>
+                <p class="text-sm text-green-600 font-semibold">50-70 % OFF</p>
+                <button
+                  class="mt-2 bg-pink-600 text-white text-sm py-2 px-4 rounded-full hover:bg-pink-700 transition-colors duration-200"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </a>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105"
+          >
+            <a href="#">
+              <img
+                src="https://placehold.co/200x260/D1ECF1/007BFF?text=Men's+Footwear"
+                alt="Men's Footwear"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-3 text-center">
+                <p class="text-gray-800 font-medium">Men's Footwear</p>
+                <p class="text-sm text-green-600 font-semibold">50-70 % OFF</p>
+                <button
+                  class="mt-2 bg-pink-600 text-white text-sm py-2 px-4 rounded-full hover:bg-pink-700 transition-colors duration-200"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </a>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105"
+          >
+            <a href="#">
+              <img
+                src="https://placehold.co/200x260/C3E6CB/28A745?text=Women's+Footwear"
+                alt="Women's Footwear"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-3 text-center">
+                <p class="text-gray-800 font-medium">Women's Footwear</p>
+                <p class="text-sm text-green-600 font-semibold">40-80 % OFF</p>
+                <button
+                  class="mt-2 bg-pink-600 text-white text-sm py-2 px-4 rounded-full hover:bg-pink-700 transition-colors duration-200"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </a>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105"
+          >
+            <a href="#">
+              <img
+                src="https://placehold.co/200x260/F8D7DA/DC3545?text=Bags,+Belts+&+Wallets"
+                alt="Bags, Belts & Wallets"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-3 text-center">
+                <p class="text-gray-800 font-medium">Bags, Belts & Wallets</p>
+                <p class="text-sm text-green-600 font-semibold">40-70 % OFF</p>
+                <button
+                  class="mt-2 bg-pink-600 text-white text-sm py-2 px-4 rounded-full hover:bg-pink-700 transition-colors duration-200"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </a>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105"
+          >
+            <a href="#">
+              <img
+                src="https://placehold.co/200x260/FFEECF/FFC107?text=Office+Wear"
+                alt="Office Wear"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-3 text-center">
+                <p class="text-gray-800 font-medium">Office Wear</p>
+                <p class="text-sm text-green-600 font-semibold">40-70 % OFF</p>
+                <button
+                  class="mt-2 bg-pink-600 text-white text-sm py-2 px-4 rounded-full hover:bg-pink-700 transition-colors duration-200"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </a>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105"
+          >
+            <a href="#">
+              <img
+                src="https://placehold.co/200x260/D6E9C6/5CB85C?text=Men's+Ethnic+Wear"
+                alt="Men's Ethnic Wear"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-3 text-center">
+                <p class="text-gray-800 font-medium">Men's Ethnic Wear</p>
+                <p class="text-sm text-green-600 font-semibold">
+                  UP TO 60 % OFF
+                </p>
+                <button
+                  class="mt-2 bg-pink-600 text-white text-sm py-2 px-4 rounded-full hover:bg-pink-700 transition-colors duration-200"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">
+          Popular Categories
+        </h2>
+        <div class="flex space-x-6 overflow-x-auto pb-4 no-scrollbar">
+          <div
+            class="flex-shrink-0 w-40 sm:w-48 bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105"
+          >
+            <a href="#">
+              <img
+                src="https://placehold.co/192x256/FFD1DC/FF0066?text=Dress+1"
+                alt="Dress"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-3 text-center">
+                <p class="text-gray-800 font-medium">Summer Dresses</p>
+                <p class="text-sm text-gray-500">Starting at ₹499</p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="flex-shrink-0 w-40 sm:w-48 bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105"
+          >
+            <a href="#">
+              <img
+                src="https://placehold.co/192x256/D1ECF1/007BFF?text=Top+2"
+                alt="Top"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-3 text-center">
+                <p class="text-gray-800 font-medium">Stylish Tops</p>
+                <p class="text-sm text-gray-500">Starting at ₹299</p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="flex-shrink-0 w-40 sm:w-48 bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105"
+          >
+            <a href="#">
+              <img
+                src="https://placehold.co/192x256/C3E6CB/28A745?text=Jeans+3"
+                alt="Jeans"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-3 text-center">
+                <p class="text-gray-800 font-medium">Denim Jeans</p>
+                <p class="text-sm text-gray-500">Starting at ₹799</p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="flex-shrink-0 w-40 sm:w-48 bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105"
+          >
+            <a href="#">
+              <img
+                src="https://placehold.co/192x256/F8D7DA/DC3545?text=Skirt+4"
+                alt="Skirt"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-3 text-center">
+                <p class="text-gray-800 font-medium">Fashion Skirts</p>
+                <p class="text-sm text-gray-500">Starting at ₹349</p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="flex-shrink-0 w-40 sm:w-48 bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105"
+          >
+            <a href="#">
+              <img
+                src="https://placehold.co/192x256/FFEECF/FFC107?text=Swimwear+5"
+                alt="Swimwear"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-3 text-center">
+                <p class="text-gray-800 font-medium">Swimwear</p>
+                <p class="text-sm text-gray-500">Starting at ₹599</p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="flex-shrink-0 w-40 sm:w-48 bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105"
+          >
+            <a href="#">
+              <img
+                src="https://placehold.co/192x256/D6E9C6/5CB85C?text=Activewear+6"
+                alt="Activewear"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-3 text-center">
+                <p class="text-gray-800 font-medium">Activewear</p>
+                <p class="text-sm text-gray-500">Starting at ₹699</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 text-center mt-auto">
+      <p>&copy; 2025 RUSHÉ. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
